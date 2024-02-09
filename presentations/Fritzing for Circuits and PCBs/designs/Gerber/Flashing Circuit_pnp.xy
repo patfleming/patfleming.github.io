@@ -1,0 +1,36 @@
+# Pick And Place List
+# Company=
+# Author=
+# eMail=
+#
+# Project=Flashing Circuit
+# Date=16:34:59
+# CreatedBy=Fritzing 1.0.0rc.2023-06-02.CD-4157-0-6b14cfe9
+#
+#
+# Coordinates in mils, always center of component
+# Origin 0/0=Lower left corner of PCB
+# Rotation in degree (0-360, math. pos.)
+#
+RefDes,Description,Package,X,Y,Rotation,Side,Mount
+Description: resistance;capacitance;inductance;voltage;current;power;mpn;mn;
+GND  Vin,";;;;;;;;","THT",332.529,1785,0,Top,THT
+Vtrig,";;;;;;;;","THT",907.617,1785,0,Top,THT
+Via37,";;;;;;;;","",570.418,802.472,0,Top,MANUAL
+C1,";1µF;;50V;;;;;","100 mil [THT, electrolytic]",300.444,1269.56,90,Top,THT
+U2,";;;;;0.25W;;;","trimpot_pth_s3_lock",568.022,343.312,0,Top,SMT
+Via39,";;;;;;;;","",824.296,1138.92,0,Top,MANUAL
+C3,";100nF;;35V;;;C2896072;;","200 mil [THT, multilayer]",74.0222,1664.31,90,Top,THT
+Q1,";;;;;;C38774;IRLZ44N;","TO220 [THT]",210.444,869.563,90,Top,THT
+Via40,";;;;;;;;","",799.022,514.312,0,Bottom,MANUAL
+R2,"680k;;;;;0.25;C714343;;","THT",639.622,869.563,90,Top,THT
+R1,"2.2k;;;;;0.25;C70772;;","THT",500.444,869.568,90,Top,THT
+Via36,";;;;;;;;","",899.774,805.738,0,Top,MANUAL
+C2,";100nF;;35V;;;C2896072;;","200 mil [THT, multilayer]",73.1111,1338.67,-90,Top,THT
+R3,"2.2k;;;;;0.25;C70772;;","THT",375.444,869.568,-90,Top,THT
+Via38,";;;;;;;;","",649.018,1214.31,0,Top,MANUAL
+R2.1,"47k;;;;;0.5W;C274539;;","THT",825.444,1294.56,180,Top,THT
+Vout GND,";;;;;;;;","THT",757.529,1785,0,Top,THT
+Via35,";;;;;;;;","",499.018,1364.31,0,Top,MANUAL
+U1,";;;;;;C695838;NE555;","DIP8 [THT]",950.444,844.563,-90,Top,THT
+Via34,";;;;;;;;","",899.018,1364.31,0,Top,MANUAL

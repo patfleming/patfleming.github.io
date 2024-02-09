@@ -1,12 +1,19 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "NMRA"
+    url: https://www.nmra.org/
+    description: National Model Railroad Association
+  - title: "LCC"
+    url: https://www.nmra.org/lcc
+    description: Layout Command Control
+  - title: "Github"
+    url: "https://github.com/patfleming"
+    description: My Github Respositories
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Sitemap"
+    url: /sitemap/presentations

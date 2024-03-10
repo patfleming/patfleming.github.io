@@ -1,12 +1,16 @@
 ---
 layout: single
-classes: full
-title: "Creating PCBs with Fritzing for your layout"
-date: 2023-11-06
-categories: tutorial PCB Fritzing
+classes: wide
+author_profile: false
+toc: true
 
-tags: [lcc, nmra, pcb]
-categories: [tutorial]
+title: "Creating PCBs with Fritzing for your layout"
+excerpt: "Step into the world of custom PCB design tailored for model railroads. Our comprehensive guide on using Fritzing demystifies the process, empowering you to bring your unique layout ideas to life with precision and ease."
+
+date: 2023-11-06
+categories: [LCC Fusion Project, tutorial]
+tags: [lcc, nmra, lcc fusion project]
+
 gallery:
   - url: /presentations/Fritzing for Circuits and PCBs/images/Presentation.png
     image_path:  /presentations/Fritzing for Circuits and PCBs/images/Presentation-100.png
@@ -92,6 +96,7 @@ Fritzing is a tool for designing PCBs, which are like the brains of electronics.
 
   LCC Testing PCB - after mastering customer PCB shapes, silkscreen, and NMRA sessions on testing LCC hardware, I decided to create a board that supports testing signaling with a turnout and blocks.  Setup is done by inserting 2(2) I/O PCBs, (5) signal mast PCBs, a Tortoise Switch Machine(TM) (inserted into a custom PCB).  Note that the PCB provides solder pads for mounting the turnout rails.  The rails are isolation into (4) blocks and connected via PCB traces to a socket connector for a single custom Block Occupancy Board (BOD).  There is also a connector for the Signal Heads board, which is connected via PCB traces to (6) signal mast PCB socket connectors.  The I/O boards are CAT6 cabled to a custom Node PCB.  Both layout and accessory terminal connections provide power via PCB traces to the rails and the appropriate BOD and Turnout, and signal masts PCBs.
   
+
 Remember, the presentation will cover all of these points in more detail.
 
 ## The Presentation

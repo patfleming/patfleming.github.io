@@ -1,12 +1,16 @@
 ---
 layout: single
-classes: full
-title: "Creating Cables for Plug & Play Layout Automation"
-date: 2023-11-09
-categories: tutorial PCB LCC
+author_profile: false
+classes: wide
+toc: true
 
-tags: [lcc, nmra, pcb]
-categories: [tutorial]
+title: "Creating Cables for Plug & Play Layout Automation"
+excerpt: "Unlock the full potential of your model railroad with our step-by-step guide on crafting custom cables for effortless layout automation. Discover the secrets to seamless connectivity and take your setup to the next level."
+
+date: 2023-11-09
+categories: [LCC Fusion Project, tutorial]
+tags: [lcc, nmra, lcc fusion project]
+
 gallery:
   - url: /presentations/Creating Cables/images/plug.jpg
     image_path:  /presentations/Creating Cables/images/plug.jpg

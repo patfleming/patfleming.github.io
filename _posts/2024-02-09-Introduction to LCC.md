@@ -1,21 +1,18 @@
 ---
 layout: single
-classes: full
-title: "Introduction to LCC"
-date: 202-9-02
-categories: tutorial PCB LCC
+author_profile: false
+classes: wide
+toc: false
 
+title: "Introduction to LCC"
+excerpt: "Dive into the world of Layout Command Control (LCC) and learn how this innovative technology is revolutionizing model railroading. From basics to benefits, get started on your journey towards a smarter, more connected layout."
+
+date: 2024-02-10
+categories: [LCC Fusion Project, tutorial]
 tags: [lcc, nmra, lcc fusion project]
-categories: [tutorial]
-gallery:
-  - url: /presentations/Creating Cables/images/plug.jpg
-    image_path:  /presentations/Creating Cables/images/plug.jpg
-    alt: "Introduction to LCC"
-    title: "Introduction to LCC"
+
 
 ---
-
-{% include gallery layout="fourth" class="custom-image-size" caption="Introduction to LCC" %}
 
 # Introduction
 
@@ -23,4 +20,6 @@ In our latest blog post, we delve into the intricacies of NMRA Layout Command Co
 
 # Resources
 
+- [Introduction to LCC (video)](https://www.youtube.com/watch?v=eF1Ejin4JPg)
+- [Introduction to LCC (PPT)](/raw/main/Introduction%20to%20LCC.zip](https://github.com/patfleming/NMRA/raw/main/Introduction to LCC.zip)
 - [My LCC Projects GitHub Repository](https://github.com/patfleming)

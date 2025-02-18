@@ -1,0 +1,31 @@
+name: Update Post Date
+
+on:
+  push:
+    paths:
+      - "_posts/*.md"
+
+jobs:
+  update-date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Update Post Date
+        run: |
+          for file in _posts/*.md; do
+            if grep -q "^date: " "$file"; then
+              sed -i "s/^date: .*/date: $(date +'%Y-%m-%d')/" "$file"
+            else
+              sed -i "1i date: $(date +'%Y-%m-%d')" "$file"
+            fi
+          done
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add _posts/*.md
+          git commit -m "Auto-update date in post metadata" || exit 0
+          git push

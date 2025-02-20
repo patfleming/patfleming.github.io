@@ -13,6 +13,7 @@ gallery:
     image_path: /assets/images/Building_First_Node_Card_100.png
     alt: "Applying Components"
     title: "Apply Components"
+    
   - url: /assets/images/Applying_paste.png
     image_path: /assets/images/Applying_paste_100.png
     alt: "Applying Paste"

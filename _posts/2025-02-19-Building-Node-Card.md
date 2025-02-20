@@ -8,9 +8,6 @@ title: "Building the Node Card: Putting My Own Documentation to the Test"
 excerpt: "Join me as I reference the documentation I created for the LCC Fusion Project to build the Node Card for the very first time—from ordering the PCB to selecting the perfect configuration."
 categories: [LCC Fusion Project, tutorial]
 tags: [lcc, node card, pcb, diy, esp32, assembly]
-header:
-  image: /assets/images/Building_First_Node_Card.png
-  caption: "My Node Card in progress"
 gallery:
   - url: /assets/images/Building_First_Node_Card.png
     image_path: /assets/images/Building_First_Node_Card_100.png
@@ -21,9 +18,9 @@ gallery:
     alt: "Applying Paste"
     title: "Apply Paste"
 
-​---
-{% include gallery layout="fourth" caption="Check out these images!" %}
 ---
+
+{% include gallery layout="fourth" caption="Check out these images!" %}
 
 When I finished writing the **Node Card Assembly Guide** for the LCC Fusion Project, I was eager to see how well it would hold up for a real-world build—especially since I authored the documentation myself. This post details my experience **using my own instructions** to assemble the Node Card for the first time. Unlike other projects that focus on signaling control, this initial Node Card is all about establishing a **solid foundation** for power distribution and networking in an LCC-based setup.
 

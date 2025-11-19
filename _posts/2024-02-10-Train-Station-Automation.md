@@ -2,7 +2,7 @@
 layout: posts
 classes: wide
 toc: false
-date: {{ date}}
+date: 2024-02-10
 
 title: "Revolutionizing Model Railroads: The Power of LCC in Train Station Automation"
 

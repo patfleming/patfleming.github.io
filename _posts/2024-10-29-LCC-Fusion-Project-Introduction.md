@@ -1,4 +1,3 @@
-date: 2025-11-19
 ---
 layout: posts
 classes: wide
@@ -9,7 +8,6 @@ excerpt: "Explore the LCC Fusion Project and discover how it's transforming mode
 
 categories: [LCC Fusion Project, Tutorial]
 tags: [lcc, nmra, lcc fusion project, esp32]
-
 ---
 
 # Introduction

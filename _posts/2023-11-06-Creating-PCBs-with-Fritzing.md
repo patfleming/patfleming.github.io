@@ -45,7 +45,6 @@ gallery:
     image_path:  /presentations/Fritzing for Circuits and PCBs/images/20230722_083314.jpg
     alt: "small boards"
     title: "Small PCBs (Signal Mast)"
-
 ---
 
 {% include gallery layout="fourth" class="custom-image-size" caption="Fritzing Usage Examples" %}

@@ -1,4 +1,3 @@
-date: 2025-11-19
 ---
 layout: posts
 classes: wide 

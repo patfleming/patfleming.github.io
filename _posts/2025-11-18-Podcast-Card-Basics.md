@@ -1,4 +1,3 @@
-date: 2025-11-19
 ---
 layout: posts
 classes: wide
@@ -29,8 +28,6 @@ We also look at how these fit the needs of **planners**, **builders**, **install
 
 - [LCC Fusion Podcast – Cards & Node Basics (video)](https://youtu.be/TdUUSL-4by8)
 
----
-
 ## What this episode covers
 
 Join Nelson and Harrison as they explore:
@@ -40,7 +37,7 @@ Join Nelson and Harrison as they explore:
 - What a **Fusion Card** is and why each one has a single, focused purpose
 - The role of the **Node Card** as the “local brain” of each layout area
 - Why Fusion uses the **ESP32** (kan bus support, Wi-Fi, Bluetooth, low cost)
-- How the **B-O-D** and **B-S-D** Cards detect occupancy and manage shorts
+- How the **BOD** and **BSD** Cards detect occupancy and manage shorts
 - How the **Turnout Card** supports many switch machine types using breakout boards
 - How the **PWM Card** enables smooth lighting and motion
 - The power of **LCC events** and how they eliminate long wiring runs

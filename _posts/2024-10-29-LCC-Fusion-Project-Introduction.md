@@ -3,7 +3,7 @@ date: 2025-11-19
 layout: posts
 classes: wide
 toc: false
-date: {{ date}}
+date: 2025-11-19
 
 title: "Introducing the LCC Fusion Project"
 excerpt: "Explore the LCC Fusion Project and discover how it's transforming model railroad automation with modular design and ESP32 technology. Dive into the documentation to learn more about setup, configuration, and applications."

@@ -3,7 +3,7 @@ date: 2025-11-19
 layout: posts
 classes: wide
 toc: false
-date: {{ date}}
+date: 2025-11-19
 
 title: "LCC Fusion Podcast – Cards & Node Basics"
 excerpt: "A discussion of the LCC Fusion Cards including the Node Card"

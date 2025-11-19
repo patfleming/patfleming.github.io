@@ -1,3 +1,4 @@
+---
 layout: posts
 classes: wide
 toc: false

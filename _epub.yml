@@ -1,0 +1,11 @@
+epub:
+  name: "LCC Fusion Project Blogs"       # Mandatory: Name of your book
+  title: "LCC Fusion Project Blogs"     # Mandatory: Title of your book
+  identifier: "unique-id-123"  # Optional: Unique identifier, e.g., ISBN
+  subject: "NMRA LCC"      # Optional: Subject of your book
+  description: "LCC Fusion Project Blogs"  # Optional: Short summary
+  creator: "Pat Fleming"       # Optional: Author of the book
+  date: "2025-03-06"           # Optional: Publication date (YYYY-MM-DD)
+  rights: "Copyright Holder"   # Optional: Copyright information
+  cover-image: "assets/images/Home_Heading_Background_ePub.png"  # Optional: Path to the cover image
+  pages-order: [post, page]    # Optional: Order of pages and posts in the book

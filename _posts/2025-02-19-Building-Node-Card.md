@@ -1,66 +1,168 @@
 ---
-layout: single
-author_profile: false
-classes: wide
+layout: posts
+classes: wide 
 toc: false
 
-title: "Building the Node Card: Putting My Own Documentation to the Test"
-excerpt: "Join me as I reference the documentation I created for the LCC Fusion Project to build the Node Card for the very first time—from ordering the PCB to selecting the perfect configuration."
-categories: [LCC Fusion Project, tutorial]
+title: "Building The Node Card"
+excerpt: "A detailed walkthrough for assembling the LCC Fusion Node Card, from ordering the PCB to verifying the final build."
+categories: [LCC Fusion Project, Tutorial]
 tags: [lcc, node card, pcb, diy, esp32, assembly]
+
 gallery:
   - url: /assets/images/Building_First_Node_Card.png
     image_path: /assets/images/Building_First_Node_Card_100.png
     alt: "Applying Components"
     title: "Apply Components"
-    
+
   - url: /assets/images/Applying_paste.png
     image_path: /assets/images/Applying_paste_100.png
     alt: "Applying Paste"
     title: "Apply Paste"
-
 ---
 
-{% include gallery layout="fourth" caption="Check out these images!" %}
+{% include gallery layout="third" caption="Building the LCC Fusion Node Card" %}
 
-When I finished writing the **Node Card Assembly Guide** for the LCC Fusion Project, I was eager to see how well it would hold up for a real-world build—especially since I authored the documentation myself. This post details my experience **using my own instructions** to assemble the Node Card for the first time. Unlike other projects that focus on signaling control, this initial Node Card is all about establishing a **solid foundation** for power distribution and networking in an LCC-based setup.
+For those interested in **model railroad automation**, the **LCC Fusion Node Card** provides device control, **power distribution,** and **network communications** with other LCC-enabled devices. The Node Card's MCU (ESP32) provides the firmware to interoperate with other LCC-compatible systems and interacts with various LCC Fusion Project devices., the **LCC Fusion Node Card** provides device control, **power distribution,** and **network communications** with other LCC enabled devices. The Node Card's MCU (ESP32) provides the firmware to interoperate with other LCC compatible and interacts with the many LCC Fusion Project devices. This guide walks through the **entire assembly process**, following the official **project documentation** step-by-step. Documentation can be found here; https://patfleming.github.io/LccFusionProject/node-card-assembly-guide/
 
-## Ordering the PCB and Choosing Your Configuration
+## **Ordering the PCB and Choosing a Configuration**
 
-Since I’d already created and provided **Gerber files** in the documentation, ordering the PCB was straightforward. I simply uploaded the files to my preferred PCB manufacturer and waited for the boards to arrive. Once they shipped, I turned to the **Assembly-Configuration Options** section of my guide to decide which configuration would best serve my test build:
+The first step in building the Node Card is to **order the PCB** using the provided **Gerber files (link found in the Components section)**. These files ensure a **high-quality fabrication** from your preferred PCB manufacturer. Once the board is ordered, the next step is to decide on the **hardware configuration**.
 
-- **Required Components:** Naturally, I included all the must-have parts—voltage regulators, power protection, and the ESP32 DevKit module—to ensure the Node Card’s core functionality.
-- **Optional CAT-Wired CAN BUS Option:** For my first build, I chose to include **only** the **CAT-Wired CAN BUS Option**. This would give me **interoperability** with other commercial LCC Nodes via a standard CAT cable—a key feature I wanted to confirm worked seamlessly.
+For this build, the **CAT-Wired CAN BUS Option** was selected, allowing for easy communications and power **connections with other NMRA compatible LCC Nodes** via standard network cables. This option enables **easy daisy-chaining** and expands the flexibility of the system.
 
-I also printed out the **assembly configuration diagram** from the guide in color, so I could easily match each color-coded area to the corresponding table entries during assembly.
+### **Printing Assembly Guides for Reference**
 
-## Sourcing Components: Following My Own Parts List
+To simplify the build process:
 
-Next, I referred to the **Components** section of my documentation to gather every part I needed. The **PCB Components** page—listed under **Builder's Resources & Tips**—proved extremely helpful, with direct links and pricing information. Even though I wrote it, I was pleasantly surprised by how easy it made the ordering process. I also printed the **PCB image** and **components list** using the printer icon on the right for a quick visual reference while I worked.
+- **Print the PCB image and component list** using the printer icon in the documentation.
+- **Print the color-coded assembly diagram** to match components with their correct placements.
+- Print the tables for component orientation 
+- Having a **printed reference on hand** significantly reduces assembly time and minimizes errors.
 
-## Prepping the Workspace and Assembling the Board
+------
 
-With everything on hand, I set up my workspace and followed the steps outlined in my own guide:
+## **Sourcing Components: What You’ll Need**
 
-1. **Cleaning the PCB:** I used isopropyl alcohol to remove any dust or residue, ensuring a smooth surface for soldering.
-2. **Aligning the Solder Paste Stencil:** The documentation mentioned the two small tooling holes for alignment, and sure enough, that tip helped me avoid misalignment issues with the stencil.
+Before starting assembly, it’s helpful to review the **Components** section in the project documentation. This provides a complete **bill of materials**, along with links to details about all LCC Fusion components with **pricing details and ordering links** under **Builder's Resources & Tips**. This is especially important for ordering the correct 'package' size and ratings.
 
-From there, I began placing components according to the **silkscreen** and **designators**. I took extra care with polarity-sensitive components like diodes and tantalum capacitors, referencing my own instructions to confirm orientation.
+### **Essential Components**
 
-## Configuration, Testing, and Troubleshooting
+- **Microcontroller:** ESP32 DevKitC
+- **Voltage Regulators:** LM2596-5V, LM1117-3V3 (or equivalent)
+- **Protection Components:** TVS diode, Schottky diodes, resettable fuse
+- **Power Inputs:** USB-C, ATX 5557 connector, DC barrel jack (depending on configuration)
+- **Networking & I/O:** RJ45 sockets for CAN and Node Bus, additional I2C and SPI headers
+- **LED Indicators & Buttons:** Power status LEDs, alert LED, CDI reset button
 
-Once assembly was done, I moved on to testing—again guided by the steps in the Node Card Assembly Guide:
+Use the Assembly-Configuration Options table to verify that you have all of the necessary components on hand before proceeding with assembly. Double-check that all components are correctly labeled and match the specified values to avoid errors during assembly. 
 
-1. **Configuration Confirmation:** I revisited the configuration table to ensure I’d implemented the **CAT-Wired CAN BUS** option correctly alongside all required components.
-2. **Voltage Checks:** A multimeter confirmed that the 3.3V, 5V, and 12V rails were within expected ranges.  
-3. **Firmware Boot-Up:** Using the serial console to monitor the ESP32’s startup messages, I verified that both the CAN and I2C interfaces were recognized and functioning.
+------
 
-Even though I wrote the documentation, I still encountered a couple of minor hiccups—mostly around rechecking solder joints. However, the troubleshooting tips I’d included in the guide quickly got me back on track.
+## **Preparing the Workspace and Assembling the Board**
 
-## Final Thoughts
+With all components ready, setting up a **clean workspace** helps ensure a smooth assembly process:
 
-Building the Node Card using my own documentation was a gratifying experience. Not only did it validate the clarity and thoroughness of the **Assembly Guide**, but it also highlighted small areas I could improve in future revisions—like adding even more visuals for certain tricky solder points.
+### **1. Cleaning and Preparing the PCB**
 
-From ordering the PCB using the **Gerber files** to confirming the **CAT-Wired CAN BUS Option** worked for interoperability, the Node Card Assembly Guide provided a clear roadmap from start to finish. If you’re about to build your own Node Card, I hope my experience—and the documentation itself—helps make your journey just as smooth. Feel free to share your own build stories or questions in the comments!
+- **Wipe the PCB with isopropyl alcohol** to remove any manufacturing residue.
+- **Verify alignment marks** to ensure proper orientation.
 
-Happy building, and stay tuned as I continue to refine and expand the LCC Fusion Project documentation!
+### **2. Applying Solder Paste and Stenciling**
+
+- **Ordering a stencil with the PCB** is required for this board, as it allows for **quick and accurate paste application** across the many **SMD components**.
+- If using a solder paste stencil:
+  - **Align the stencil** using the **two small tooling holes**.
+  - **Apply a thin, even layer** of solder paste using a squeegee.
+  - **Remove excess paste** before carefully lifting the stencil.
+
+### **3. Placing Components**
+
+- Start with **small surface-mount components** such as resistors and capacitors.
+- Place **ICs and voltage regulators** next, ensuring correct orientation.
+- Through-hole components like **connectors, headers, and large capacitors** are added last.
+- **Use the provided tables** in the assembly documentation to correctly orient all components.
+- Note that additional optional components and parts can be added later using a soldering gun and/or heat blower. Because of possible damage to components and parts, it is not recommended to perform a 2nd reflow after PTH components have been added.
+
+### **4. Reflow Soldering or Hand Soldering**
+
+- If using **reflow soldering**, preheat your oven and follow **recommended temperature profiles**.
+- For **hand soldering**, use a fine-tip soldering iron at **350–375°C** with **flux** for clean joints.
+
+### **5. Inspecting Solder Joints**
+
+- Use a **magnifying glass or microscope** to check for **cold joints, bridges, or missing connections**.
+- Reflow any problematic areas with a **heat gun or soldering iron**.
+
+------
+
+## **Configuration and Testing**
+
+### **1. Verifying Electrical Continuity**
+
+Before applying power:
+
+- Use a **multimeter in continuity mode** to check for shorts between **VCC and GND**.
+- Verify that **critical power paths are intact**.
+
+### **2. Powering Up the Board**
+
+- If using a **bench power supply**, start with **current limiting enabled** to prevent damage.
+- If using a **12V or 5V adapter**, confirm correct polarity before connecting.
+
+### **3. Checking Node Bus and CAN Communications**
+
+To verify **CAN and I2C communication**:
+
+- Connect the **Node Card to another LCC device** using an **RJ45 cable**.
+- Open a **serial monitor** on your computer and check for **successful CAN bus initialization**.
+- Run an **I2C scan** to detect connected I/O devices.
+
+### **4. Flashing the ESP32 Firmware**
+
+Once power and communication are verified:
+
+- Use the **provided firmware flashing tool** to install the Node Card firmware.
+- Open a **serial monitor** (e.g., YAT or Arduino Serial Monitor) to check **startup messages**.
+- If necessary, use the **CDI reset button** to restore factory settings.
+
+## Parts List
+
+To assist you in sourcing the necessary components for building the node card, we've compiled a comprehensive parts list from [AliExpress.com](). This table details each component, the supplier, pricing, and quantities required, providing a clear overview to streamline your assembly process.
+
+| **Product Name**                                             | **Seller**                                  | **Price (USD)** | **Quantity** |
+| ------------------------------------------------------------ | ------------------------------------------- | --------------- | ------------ |
+| ESP32-DevKitC core board ESP32 development board ESP32-WROOM-32D ESP32-WROOM-32U | WCMCU Store                                 | $3.13           | 1            |
+| 10pcs Black RJ45 8P8C Computer Internet Network PCB Jack Socket | C&S Store                                   | $1.71           | 1            |
+| 100pcs 1206 SMD Chip Multilayer Ceramic Capacitor 0.5pF - 100uF | DSSRQI Official Store                       | $1.41           | 1            |
+| 10pcs/lot PESD1CAN TAN SOT-23 CAN bus ESD protection diode   | Shenzhen IC Global Pass Co LI's Store       | $1.20           | 1            |
+| 1808 125V 0451 SMD Fast Blow Fuse 0.5A - 15A                 | HKW Store                                   | $2.85           | 1            |
+| 10pcs/lot AMS1117-3.3V Voltage Regulator                     | LuLuMi Phone Store                          | $0.94           | 1            |
+| 10pcs LM2596S Voltage Regulator Modules                      | Jin Tank Store                              | $1.84           | 1            |
+| 5/10/20pcs LM7805 L7805 7805 L7812CV Voltage Regulator ICs   | Moviitroni Electronic Group Store           | $1.48           | 1            |
+| 50pcs LM393 LM393DR LM393D SOP-8 Comparators                 | Supplier of Electronic Components           | $1.41           | 1            |
+| 10pcs SN65HVD Series CAN Transceivers                        | Jin Tank Store                              | $3.62           | 1            |
+| 100Pcs SMD 1206 Resistors 0ohm - 10M Ohm 1%                  | CHANZON Official Store                      | $1.91           | 1            |
+| 10PCS DIP Power Inductor 8x10mm Various Values               | TLZWLA Official Store                       | $1.00           | 1            |
+| 100PCS 1206 BLM31PG121SN1L 120 OHM SMD Chip EMI Ferrite Bead | C&G Semiconductor                           | $2.73           | 1            |
+| Resettable Fuse 30V PTC Polymer PPTC DIP JK30 0.5A - 10A     | DQLZV Official Store                        | $1.89           | 1            |
+| 100pcs SOD-123 1206 SMD Zener Diode 2V - 47V                 | JINLU Store                                 | $1.28           | 1            |
+| 100PCS TVS Diode SMBJ Series 16A - 33A SMD                   | Good Good Cheap Electronics Wholesale Store | $4.76           | 1            |
+| 10pcs SMD Polymer Solid Capacitor 6.3V - 1000uF              | Auwah Store                                 | $1.94           | 1            |
+| 10pcs DIP Solid Electrolytic Capacitor Super Low ESR 6.3V - 1000uF | HKW Store                                   | $2.97           | 1            |
+| 10PCS A B C D Case Tantalum Capacitor 6V - 50V 0.1uF - 330uF | FXI Electronics Co., Ltd.                   | $1.32           | 1            |
+
+------
+
+## **Final Thoughts**
+
+The **LCC Fusion Node Card** is a versatile addition to any **model railroad automation project, providing interoperability with other LCC Nodes in your network and communicating with LCC Fusion cards for automation. By following the documented process, assembling the board becomes an **accessible and repeatable** task.
+
+### **Key Takeaways:**
+
+✅ **Ordering a stencil** with the PCB ensures **quick and accurate paste application**.
+ ✅ **Printing the color-coded assembly diagram** simplifies component placement.
+ ✅ **Using the provided tables** ensures **correct component orientation**.
+ ✅ **Verifying continuity before power-up** helps prevent damage.
+ ✅ **Testing CAN/I2C communication** ensures seamless integration with other LCC nodes.
+
+For those planning their own build, the **documentation provides everything needed** to get started. 

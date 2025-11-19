@@ -1,4 +1,34 @@
 ---
-layout: home
+title: "Welcome to LCC Fusion Blog"
+layout: "home"
 author_profile: true
+
+pagination:
+  enabled: true
+sidebar:
+  nav: "main"
+header:
+  overlay_image: /assets/images/Home_Heading_Background.png
+  caption: "LCC Fusion Project Blog"
+excerpt: "Latest updates, guides, and insights about LCC Fusion."
+feature_row:
+  - image_path: /assets/images/Building_First_Node_Card_100.png
+    title: "Building an LCC Node"
+    excerpt: "Gain hands-on experience assembling an LCC Node..."
+    url: /building-lcc-node/
+    btn_label: "Read More"
+    btn_class: "btn--primary"	
 ---
+{% include feature_row %}
+
+<section>
+  <h2>Recent Posts</h2>
+  {% for post in paginator.posts limit:5 %}
+    <article>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+      <p>{{ post.excerpt }}</p>
+    </article>
+  {% endfor %}
+</section>
+<a href="{{ site.baseurl }}/posts/">View All Posts</a>
+<a href="{{ site.baseurl }}/podcasts/">View All Podcasts</a>

@@ -1,5 +1,9 @@
 # main links
 main:
+  - title: "Posts"
+    url: /posts/
+  - title: "Podcasts"
+    url: /podcasts/
   - title: "NMRA"
     url: https://www.nmra.org/
     description: National Model Railroad Association
@@ -9,11 +13,11 @@ main:
   - title: "Github"
     url: "https://github.com/patfleming"
     description: My Github Respositories
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
   - title: "Categories"
     url: /categories/
   - title: "Sitemap"
     url: /sitemap/
+
+sidebar_nav:
+  - title: "Tutorials"
+    url: /tutorials/

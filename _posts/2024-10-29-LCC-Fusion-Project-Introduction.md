@@ -1,14 +1,12 @@
 ---
-layout: single
-author_profile: false
+layout: posts
 classes: wide
 toc: false
 
 title: "Introducing the LCC Fusion Project"
 excerpt: "Explore the LCC Fusion Project and discover how it's transforming model railroad automation with modular design and ESP32 technology. Dive into the documentation to learn more about setup, configuration, and applications."
 
-date: 2024-10-06
-categories: [LCC Fusion Project, tutorial]
+categories: [LCC Fusion Project, Tutorial]
 tags: [lcc, nmra, lcc fusion project, esp32]
 
 ---

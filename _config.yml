@@ -161,11 +161,11 @@ include:
   - .htaccess
   - _pages
   - _posts
-  - presentations
-  - podcasts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - presentations
+  - podcasts
   - vendor
   - .asset-cache
   - .bundle

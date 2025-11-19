@@ -1,10 +1,9 @@
-date: 2025-11-19
 ---
 layout: posts
 classes: wide 
 toc: false
 
-title: "Building The Node Card"
+title: "Building The LCC Fusion Node Card"
 excerpt: "A detailed walkthrough for assembling the LCC Fusion Node Card, from ordering the PCB to verifying the final build."
 categories: [LCC Fusion Project, Tutorial]
 tags: [lcc, node card, pcb, diy, esp32, assembly]
@@ -12,8 +11,8 @@ tags: [lcc, node card, pcb, diy, esp32, assembly]
 gallery:
   - url: /assets/images/Building_First_Node_Card.png
     image_path: /assets/images/Building_First_Node_Card_100.png
-    alt: "Applying Components"
-    title: "Apply Components"
+    alt: "Building The LCC Node"
+    title: "Building The LCC Node"
 
   - url: /assets/images/Applying_paste.png
     image_path: /assets/images/Applying_paste_100.png

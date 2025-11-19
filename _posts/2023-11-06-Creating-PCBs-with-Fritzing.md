@@ -6,7 +6,7 @@ toc: true
 title: "Creating PCBs with Fritzing for your layout"
 excerpt: "Step into the world of custom PCB design tailored for model railroads. Our comprehensive guide on using Fritzing demystifies the process, empowering you to bring your unique layout ideas to life with precision and ease."
 
-date: 2023-11-06
+date: 2025-11-19
 categories: [LCC Fusion Project, Tutorial]
 tags: [lcc, nmra, lcc fusion project]
 

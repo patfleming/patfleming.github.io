@@ -2,6 +2,7 @@
 layout: posts
 classes: wide
 toc: false
+date: {{ date}}
 
 title: "First Impressions: Navigating the LCC Fusion Project Documentation"
 excerpt: "As the creator of the LCC Fusion Project, I built this documentation to help model railroaders and DIYers explore LCC automation—even if they’re new to electronics, PCBs, and firmware. Here’s how it performs."

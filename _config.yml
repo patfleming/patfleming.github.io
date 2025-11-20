@@ -1,14 +1,13 @@
 title                    : "NMRA LCC Projects"
 description              : "LCC related projects for adding more automation to a model train layout using NMRA LCC and Internet of Things (IOT) devices."
 subtitle                 : "Using Layout Command Control (LCC) for model train layout automation"
-baseurl: "/LccFusionPosts"
 url                      : https://patfleming.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-remote_theme: "mmistakes/minimal-mistakes@4.27.3" #uncomment when using Jekyll builds from Github
+baseurl: "/LccFusionPosts"
 repository: https://github.com/patfleming/LccFusionPosts
 permalink                : /:categories/:title/
 
-# when serving locally with the theme below, use: bundle exec jekyll serve --config _config.yml,_config_dev.yml 
-# theme: minimal-mistakes-jekyll # uncomment when using jekyll builds from Windows
+remote_theme: "mmistakes/minimal-mistakes@4.27.3" 
+
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -105,42 +104,11 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://github.com/patfleming"
-    # The following entries are commented out; remove the '#' to include them
-    #- label: "Twitter"
-    #  icon: "fab fa-fw fa-twitter-square"
-    #  url: "https://twitter.com/"
-    #- label: "Facebook"
-    #  icon: "fab fa-fw fa-facebook-square"
-    #  url: "https://facebook.com/"
-    #- label: "GitHub"
-    #  icon: "fab fa-fw fa-github"
-    #  url: "https://github.com/"
-    #- label: "Instagram"
-    #  icon: "fab fa-fw fa-instagram"
-    #  url: "https://instagram.com/"
 
 
 # Site Footer
 footer:
   links:
-    #- label: "Twitter"
-    #  icon: "fab fa-fw fa-twitter-square"
-      # url:
-    #- label: "Facebook"
-    #  icon: "fab fa-fw fa-facebook-square"
-      # url:
-    #- label: "GitHub"
-    #  icon: "fab fa-fw fa-github"
-      # url:
-    #- label: "GitLab"
-    #  icon: "fab fa-fw fa-gitlab"
-      # url:
-    #- label: "Bitbucket"
-    #  icon: "fab fa-fw fa-bitbucket"
-      # url:
-    #- label: "Instagram"
-    #  icon: "fab fa-fw fa-instagram"
-      # url:
 
 
 # Reading Files
@@ -171,9 +139,7 @@ exclude:
   - package.json
   - package-lock.json
   - README
-  - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
+  
 keep_files:
   - .git
   - .svn

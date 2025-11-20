@@ -3,6 +3,7 @@ layout: posts
 classes: wide
 toc: true
 date: 2025-11-20
+author_profile: true
 
 
 title: "Creating PCBs with Fritzing for your layout"

@@ -3,6 +3,7 @@ layout: posts
 classes: wide
 toc: false
 date: 2025-11-19
+author_profile: true
 
 title: "LCC Fusion Podcast – Cards & Node Basics"
 excerpt: "A discussion of the LCC Fusion Cards including the Node Card"
@@ -10,8 +11,8 @@ categories: [LCC Fusion Project, Tutorial, Podcast]
 tags: [podcasts]
 
 gallery:
-  - url: /assets/podcasts/images/Cards_Node_Basics.png
-    image_path:  /assets/podcasts/images/Cards_Node_Basics.png
+  - url: /assets/podcasts/images/Cards_Node_Basics.jpg
+    image_path:  /assets/podcasts/images/Cards_Node_Basics.jpg
     alt: "Presentation"
     title: "Cards & Basics (refer to Resources section for full presentation)"
 ---

@@ -2,21 +2,25 @@
 main:
   - title: "Posts"
     url: /posts/
+    description: All Posts
   - title: "Podcasts"
     url: /podcasts/
+    description: All Podcasts
+  - title: "Categories"
+    url: /categories/
+    description: All Categories
+  - title: "Sitemap"
+    url: /sitemap/
+    description: Sitemap of the Site
+  - title: "Github"
+    url: "https://github.com/patfleming"
+    description: My Github Respositories
   - title: "NMRA"
     url: https://www.nmra.org/
     description: National Model Railroad Association
   - title: "LCC"
     url: https://www.nmra.org/lcc
     description: Layout Command Control
-  - title: "Github"
-    url: "https://github.com/patfleming"
-    description: My Github Respositories
-  - title: "Categories"
-    url: /categories/
-  - title: "Sitemap"
-    url: /sitemap/
 
 sidebar_nav:
   - title: "Tutorials"

@@ -1,6 +1,7 @@
 ---
 title: "Podcasts"
-layout: single
+layout: posts
+classes: wide
 permalink: /podcasts/
 author_profile: false
 date: 2025-11-20

@@ -2,58 +2,57 @@ title                    : "LCC Fusion Posts"
 description              : "LCC Fusion Posts is a DIY project providing hardware and software for Model Train Layout Automation using NMRA Layout Command Control (LCC)"
 url                      : https://patfleming.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "/LccFusionPosts"
-repository: https://github.com/patfleming/LccFusionPosts
+repository: "patfleming/LccFusionPosts"
 permalink                : /:categories/:title/
+name                     : "Pat Fleming"
 
-remote-theme: "mmistakes/minimal-mistakes" 
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+#theme                  : "minimal-mistakes-jekyll"
+remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 logo                     : /assets/images/LCCFusionLogo.png 
 favicon_ico              : "/assets/images/favicon.ico"
 
-# navigation links are located in _data/navigation.yml
-
- # Site Settings
-locale                   : "en-US"
-title_separator          : "-"
-name                     : "Pat Fleming"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : true # true, false (default)
-
-
-# Site Author
-author:
-  name: "Pat Fleming"
-  avatar: "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Retired software engineer, inspired by NMRA LCC to provide DIY train layout automation."
-  location: "Duluth MN"
-  #email: "PatFlemingHtc@gmail.com"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:PatFleminghtc@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://github.com/patfleming"
-
-
-# Site Footer
-footer:
-  links:
-
+# Plugins (previously gems:)
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
 
 # Reading Files
+include:
+  - .htaccess
+  - _pages
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
   - Gemfile
-  - Gemfile.lock
+  - Gruntfile.js
+  - gulpfile.js
   - LICENSE
-
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+  - log
+  - minimal-mistakes-jekyll.gemspec
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+keep_files:
+  - .git
+  - .svn
 
 # Conversion
 markdown: kramdown
@@ -73,6 +72,39 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# navigation links are located in _data/navigation.yml
+
+ # Site Settings
+locale                   : "en-US"
+title_separator          : "-"
+name                     : "Pat Fleming"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+words_per_minute         : 200
+# breadcrumbs            : true # true, false (default)
+
+
+# Site Author
+author:
+  name: "Pat Fleming"
+  avatar: "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "Retired software engineer, inspired by NMRA LCC to provide DIY train layout automation."
+  location: "Duluth MN"
+  #email: "PatFlemingHtc@gmail.com"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:PatFleminghtc@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://github.com/patfleming"
+
+# Site Footer
+footer:
+  links:
+
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Sass/SCSS
 sass:
@@ -85,18 +117,11 @@ paginate: 5 # amount of posts to show
 paginate_path: "/posts/page:num/"
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Plugins (previously gems:)
-plugins:
-  - jekyll-remote-theme
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-include-cache
-  
-yaml safe: false
+
 
 # mimic GitHub Pages with --safe
 whitelist:
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -110,14 +135,12 @@ tag_archive:
   type: liquid
   path: /tags/
 
-
 # HTML Compression
 # - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-
 
 # Defaults
 defaults:

@@ -5,19 +5,5 @@ search: false
 
 @charset "utf-8";
 
-@use "minimal-mistakes/skins/dark"; // skin
-@use "minimal-mistakes"; // main partials
-
-
-.custom-image-size img {
-  width: auto;
-  height: 90;
-}
-
-.layout--default .initial-content {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  /* optional: keep lines from getting too long */
-  max-width: 1200px;
-  margin: 0 auto;
-}
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials

@@ -10,7 +10,7 @@ gem "sass-embedded"
 gem "minimal-mistakes-jekyll"
 
 # Use GitHub Pages' locked dependencies by uncommenting these lines:
-# gem "github-pages", "~> 227", group: :jekyll_plugins
+# gem "github-pages", group: :jekyll_plugins
 # gem "jekyll-include-cache", group: :jekyll_plugins
 
 group :jekyll_plugins do

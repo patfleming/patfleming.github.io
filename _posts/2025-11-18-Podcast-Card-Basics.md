@@ -10,8 +10,8 @@ categories: [LCC Fusion Project, Tutorial, Podcast]
 tags: [podcasts]
 
 gallery:
-  - url: /assets/podcasts/images/Cards_Node_Basics.jpg
-    image_path:  /assets/podcasts/images/Cards_Node_Basics.jpg
+  - url: /assets/podcasts/images/Cards_Node_Basics.png
+    image_path:  /assets/podcasts/images/Cards_Node_Basics.png
     alt: "Presentation"
     title: "Cards & Basics (refer to Resources section for full presentation)"
 ---

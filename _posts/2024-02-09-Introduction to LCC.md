@@ -2,12 +2,12 @@
 layout: posts
 classes: wide
 toc: false
-date: 2025-11-19
+date: 2025-11-20
 
 title: "Introduction to LCC"
 excerpt: "Dive into the world of Layout Command Control (LCC) and learn how this innovative technology is revolutionizing model railroading. From basics to benefits, get started on your journey towards a smarter, more connected layout."
 
-date: 2025-11-19
+date: 2025-11-20
 categories: [LCC Fusion Project, Tutorial]
 tags: [lcc, nmra, lcc fusion project]
 

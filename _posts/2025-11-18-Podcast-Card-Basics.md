@@ -16,8 +16,7 @@ gallery:
     image_path:  /assets/podcasts/images/Cards_Node_Basics.jpg
     alt: "Presentation"
     title: "Cards & Basics (refer to Resources section for full presentation)"
----
-
+--- 
 
 {% include gallery layout="third" caption="LCC Fusion Cards and Node Basics" %}
 

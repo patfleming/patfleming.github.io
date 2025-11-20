@@ -2,12 +2,12 @@
 layout: posts
 classes: wide
 toc: true
-date: 2025-11-19
+date: 2025-11-20
 
 title: "Creating Cables for Plug & Play Layout Automation"
 excerpt: "Unlock the full potential of your model railroad with our step-by-step guide on crafting custom cables for effortless layout automation. Discover the secrets to seamless connectivity and take your setup to the next level."
 
-date: 2025-11-19
+date: 2025-11-20
 categories: [LCC Fusion Project, Tutorial]
 tags: [lcc, nmra, lcc fusion project]
 

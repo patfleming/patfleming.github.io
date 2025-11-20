@@ -6,7 +6,7 @@ baseurl: "/LccFusionPosts"
 repository: https://github.com/patfleming/LccFusionPosts
 permalink                : /:categories/:title/
 
-theme: "mmistakes/minimal-mistakes@4.27.3" 
+remote-theme: "mmistakes/minimal-mistakes@4.27.3" 
 
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
